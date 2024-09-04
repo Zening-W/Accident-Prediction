@@ -52,7 +52,7 @@ for row in data_set:
 	features.append((row[0],row[1]))
 	labels.append(row[2])
 
-#split the data (90% train, 5% test, 5% validation) 查为什么
+#split the data (90% train, 5% test, 5% validation) 
 train_data = features[:int(len(features)*0.9)]
 train_labels = labels[:int(len(features)*0.9)]
 test_data = features[int(len(features)*0.9):int(len(features)*0.95)]
